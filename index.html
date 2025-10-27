@@ -1,52 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Happy Birthday — Personalized</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="A personalized happy birthday page." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Zain 🎉</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page bg-soft">
-    <header class="nav">
-      <a class="logo" href="index.html">HappyDay</a>
-      <nav>
-        <a href="gallery.html">Gallery</a>
-        <a href="message.html">Messages</a>
-      </nav>
-    </header>
+  <canvas id="confetti"></canvas>
 
-    <main class="hero">
-      <div class="card">
-        <div class="photo-wrap">
-          <!-- Replace assets/person.jpg with the person's photo -->
-          <img id="personPhoto" src="image.jpg" alt="Birthday Person">
-        </div>
-        <h1 id="wishHeading">🎉 Happy Birthday, <span id="personName">zain shah</span>! 🎉</h1>
-        <p class="subtitle">Wishing you a day full of love and sweet surprises.</p>
+  <div class="container">
+    <h1 class="title">🎉 Happy Birthday Zain 🎉</h1>
+    <p class="subtitle">Wishing you a day filled with joy, laughter, and surprises!</p>
 
-        <div class="actions">
-          <button id="surpriseBtn" class="btn">Open Surprise</button>
-          <button id="musicToggle" class="btn btn-ghost">Play Music</button>
-        </div>
-
-        <div id="surprise" class="surprise hidden">
-          <h2> Happy Birthday from your best wisher ❤️</h2>
-          <p>May your day be bright and your smile brighter!</p>
-        </div>
-      </div>
-    </main>
-
-    <canvas id="confettiCanvas"></canvas>
-
-    <audio id="bgMusic" loop>
-      <source src="happy-birthday-254480.mp3" type="audio/mpeg">
-      Your browser does not support audio.
-    </audio>
-
-    <footer class="footer">Made with ❤️ — Share this link with the birthday person</footer>
+    <div class="buttons">
+      <button id="playMusicBtn">▶ Play Music</button>
+      <button onclick="window.location.href='surprise.html'">🎁 Open Surprise</button>
+      <button onclick="window.location.href='message.html'">💌 Send a Message</button>
+    </div>
   </div>
+
+  <audio id="birthdaySong" src="assets/song.mp3" preload="auto"></audio>
 
   <script src="script.js"></script>
 </body>
