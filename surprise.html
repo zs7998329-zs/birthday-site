@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Surprise — Happy Birthday Zain</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="surprise-container">
+    <h2 class="surprise-title">🎈 Surprise for Zain!</h2>
+    <div class="balloon-stage">
+      <div class="balloon b1">🎈</div>
+      <div class="balloon b2">🎈</div>
+      <div class="balloon b3">🎈</div>
+      <div class="balloon b4">🎈</div>
+    </div>
+
+    <div class="card">
+      <img src="assets/placeholder.jpg" alt="Zain's Photo" class="photo" />
+      <h3 class="big-msg">Happy Birthday, Zain!</h3>
+      <p class="sub-msg">May your year ahead be filled with adventure and joy.</p>
+      <div class="buttons">
+        <button onclick="window.location.href='index.html'">← Back Home</button>
+        <button onclick="toggleConfetti()">Toggle Confetti</button>
+        <button onclick="window.location.href='message.html'">See Messages →</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="confetti2" class="confetti-canvas"></canvas>
+  <audio id="song2" src="assets/song.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
